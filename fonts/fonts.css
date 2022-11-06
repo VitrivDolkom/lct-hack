@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Cheque';
+    src: url('Cheque-Regular.eot');
+    src: url('Cheque-Regular.woff') format('woff'),
+        url('Cheque-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cheque';
+    src: url('Cheque-Black.eot');
+    src: url('Cheque-Black.woff') format('woff'),
+        url('Cheque-Black.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Miratrix';
+    src: url('Miratrix-Normal.eot');
+    src: url('Miratrix-Normal.woff') format('woff'),
+        url('Miratrix-Normal.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}

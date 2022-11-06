@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/lct-hack/static/css/main.ced074ac.css",
+    "main.js": "/lct-hack/static/js/main.48807d5f.js",
+    "static/media/sign.png": "/lct-hack/static/media/sign.199526c5799911013dc1.png",
+    "static/media/preloader.gif": "/lct-hack/static/media/preloader.58ea37c06867abfb574a.gif",
+    "static/media/name.svg": "/lct-hack/static/media/name.3c464d9261139f420c43798ebdb31c32.svg",
+    "static/media/departament.svg": "/lct-hack/static/media/departament.a44eae479aebedcb4bdddea700076a86.svg",
+    "index.html": "/lct-hack/index.html",
+    "static/media/acc.svg": "/lct-hack/static/media/acc.10720e47ea96dec9ec63305977d69e54.svg",
+    "static/media/down.svg": "/lct-hack/static/media/down.85937abe7cda4ddcc93f847b838bc501.svg",
+    "static/media/logo.svg": "/lct-hack/static/media/logo.f39975aff8f45648ee2f324d2bd9e7b9.svg",
+    "main.ced074ac.css.map": "/lct-hack/static/css/main.ced074ac.css.map",
+    "main.48807d5f.js.map": "/lct-hack/static/js/main.48807d5f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ced074ac.css",
+    "static/js/main.48807d5f.js"
+  ]
+}

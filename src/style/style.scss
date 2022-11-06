@@ -1,0 +1,89 @@
+//  todo var
+
+$max_width: 1920;
+$box_width: 1485;
+$md1: $box_width + 20;
+$md2: 992;
+$md3: 768;
+$md4: 480;
+$ff: "Arial";
+$fz: 16px;
+$fw: 400;
+
+//  todo mixin
+
+@import "mixin";
+
+//  todo template
+
+//  todo default someting
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $ff;
+  font-size: $fz;
+  font-weight: $fw;
+  overflow-x: hidden;
+
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.box {
+  max-width: $box_width + px;
+  margin: 0px auto;
+  padding: 0 10px;
+}
+
+.box-md {
+  @media screen and (max-width: ($md1 + px)) {
+    width: $md2 + px;
+  }
+
+  @media screen and (max-width: ($md2 + px)) {
+    width: $md3 + px;
+  }
+
+  @media screen and (max-width: ($md3 + px)) {
+    width: $md4 + px;
+  }
+
+  @media screen and (max-width: ($md4 + px)) {
+    width: 320px;
+  }
+}
+
+// ------------------------------ //
+
+// @import "header";
+
+
+// .example-enter.example-enter-active {
+//   opacity: 1;
+//   transition: opacity 300ms ease-in;
+// }
+
+// .example-leave {
+//   opacity: 1;
+// }
+
+// .example-leave.example-leave-active {
+//   opacity: 0.01;
+//   transition: opacity 300ms ease-in;
+// }

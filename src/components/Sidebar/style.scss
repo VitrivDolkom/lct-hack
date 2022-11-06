@@ -1,0 +1,45 @@
+.sidebar {
+    padding: 20px 10px;
+    flex: 1;
+    background-color: pink;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .top {
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+        span {
+            color:cornflowerblue;
+            margin-left: 10px;
+        }
+    }
+
+    .main {
+        margin-top: 30px;
+        flex: 1 1 auto;
+        ul {
+            display: flex;
+            flex-direction: column;
+            li {
+                cursor: pointer;
+                margin-top: 10px;
+                height: 40px;
+                background-color:azure;
+                border: 1px solid black;
+                border-radius: 10px;
+                display: flex;
+                padding-left: 10px;
+                align-items: center;
+            }
+        }
+    }
+
+    footer {
+        cursor: pointer;
+        background-color:aquamarine;
+        padding: 15px;
+
+    }
+}

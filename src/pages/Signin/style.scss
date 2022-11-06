@@ -1,0 +1,67 @@
+@import "../../style/vars.scss";
+
+.signin {
+    min-height: 950px;
+    @media screen and (max-width:($md2 + px)) {
+        min-height: 850px;
+    }
+    & input {
+        position: relative;
+    }
+
+    & h1 {
+        font-size: 70px;
+        @media screen and (max-width: (1200 + px)) {
+            font-size: 60px;
+        }
+
+        @media screen and (max-width:($md2 + px)) {
+            font-size: 50px;
+        }
+        @media screen and (max-width: ($md3 + px)) {
+          font-size: 42px;
+        }
+    }
+
+    & label {
+        font-size: 46px;
+        @media screen and (max-width: (1200 + px)) {
+            font-size: 35px;
+        }
+
+        @media screen and (max-width:($md2 + px)) {
+            font-size: 30px;
+            line-height: normal;
+        }
+        @media screen and (max-width: ($md3 + px)) {
+          font-size: 27px;
+        }
+    }
+
+    .show {
+        margin-top: 10px;
+        font-size: 17px;
+        // position: absolute;
+        color: red;
+        padding-left: 20px;
+
+        @media screen and (max-width:($md2 + px)) {
+          width: 300px;
+        }
+        @media screen and (max-width: ($md3 + px)) {
+            font-size: 16px;
+            padding-left: 0px;
+        }
+    }
+
+
+    #name-rule {}
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

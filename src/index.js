@@ -11,11 +11,6 @@ import { AuthProvider } from './context/autho';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="*" element={<AuthProvider><App /></AuthProvider>}>
-      </Route>
-    </Routes>
-  </BrowserRouter >
+  <AuthProvider><App /></AuthProvider>
 );
 

@@ -17,6 +17,8 @@ import { useCookies } from "react-cookie";
 import getFromSessionStorage from "./storage/storage";
 import Successin from "./components/Successin";
 import { useContext, useEffect } from "react";
+import { AuthProvider } from './context/autho';
+
 
 function App() {
   const { auth, setAuth, setSaved } = useContext(AuthContext);
@@ -32,12 +34,12 @@ function App() {
     }
     // const response = await axios.post("", JSON.stringify(cookie.refreshToken), { "Content-type": application / json, withCredentials: true })
     if (cookie.refreshToken !== undefined) {
-      setAuth({ userName: response.userName })  
+      setAuth({ userName: response.userName })
       // setSaved(response.saved);
       // sessionStorage.setItem("saved", JSON.stringify(response.saved))
     } else {
       setAuth({ userName: "", password: "" });
-      
+
     }
   }
 
@@ -46,25 +48,24 @@ function App() {
   }, [cookie])
 
   return (
+
     <div className="App">
       {/* <BrowserRouter> */}
-        <Routes>
-          <Route path="/">
-            <Route index element={<Home />} />
-            {auth.userName ? <>
-              <Route path=":userId/saved" element={<Saved />}>
-                {/* <Route path=":userId/saved"  /> */}
-                {/* <Route path=":userId/acc" element={<Account />} /> */}
-              </Route>
-              <Route path="/:userId" element={<Home />} />
-            </>
-              : ""}
-            <Route path="/login" element={<Login />} />
-            <Route path="/signin" element={<Signin />} />
-            <Route path="/success" element={<Successin />} />
-
+      <Routes>
+        <Route index element={<Home />} />
+        {auth.userName ? <>
+          <Route path=":userId/saved" element={<Saved />}>
+            {/* <Route path=":userId/saved"  /> */}
+            {/* <Route path=":userId/acc" element={<Account />} /> */}
           </Route>
-        </Routes>
+          <Route path="/:userId" element={<Home />} />
+        </>
+          : ""}
+        <Route path="/login" element={<Login />} />
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/success" element={<Successin />} />
+      </Routes>
+
       {/* </BrowserRouter> */}
     </div>
   );
